@@ -2,7 +2,7 @@
 import { Mail, Phone, MapPin, Link2, MessageCircle, ArrowRight } from 'lucide-react';
 
 const footerLinks = {
-  Services: ['ERP Development', 'CRM Development', 'E-Commerce', 'Mobile Apps', 'AI Solutions', 'Cloud & DevOps'],
+  Services: ['ERP Development', 'CRM Development', 'E-Commerce', 'Mobile Apps', 'AI Solutions', 'Cloud & DevOps', 'Digital Marketing'],
   Products: ['JioDigi ERP', 'JioDigi CRM', 'JioDigi Commerce', 'JioDigi AI'],
   Company: ['About Us', 'Case Studies', 'Careers', 'Blog', 'Privacy Policy'],
   Support: ['Documentation', 'Help Center', 'Contact Us', 'Status Page'],

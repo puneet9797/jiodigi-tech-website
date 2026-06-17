@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Database, Users, ShoppingCart, Smartphone, Brain, Cloud, CheckCircle, ArrowRight } from 'lucide-react';
+import { Database, Users, ShoppingCart, Smartphone, Brain, Cloud, Megaphone, CheckCircle, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -82,6 +82,20 @@ const services = [
     ],
     benefits: ['99.9% uptime guarantee', 'High performance infrastructure', 'Secure & compliant'],
     badge: null,
+  },
+  {
+    icon: <Megaphone size={28} />,
+    title: 'Digital Marketing',
+    color: '#38bdf8',
+    gradient: 'linear-gradient(135deg, #38bdf8, #0ea5e9)',
+    description: 'Data-driven marketing campaigns to increase brand visibility and drive sales.',
+    features: [
+      'Search Engine Optimization (SEO)', 'Pay-Per-Click Advertising (PPC)',
+      'Social Media Management (SMM)', 'Content Marketing',
+      'Email Marketing Automation', 'Web Analytics & Reports',
+    ],
+    benefits: ['Increase organic traffic by 150%', 'Maximize ROI on ad spend', 'Strengthen online brand presence'],
+    badge: 'New',
   },
 ];
 
