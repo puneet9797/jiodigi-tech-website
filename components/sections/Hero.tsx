@@ -15,6 +15,7 @@ const floatingCards = [
   { label: 'E-Commerce', icon: '🛒', color: '#10b981', delay: 3 },
   { label: 'Mobile', icon: '📱', color: '#f59e0b', delay: 4.5 },
   { label: 'AI Solutions', icon: '🧠', color: '#06b6d4', delay: 6 },
+  { label: 'Digital Marketing', icon: '📣', color: '#38bdf8', delay: 7.5 },
 ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -478,6 +479,7 @@ export default function Hero() {
                 { bottom: '30%', left: '-18%' },
                 { bottom: '10%', right: '-10%' },
                 { top: '50%', left: '-22%' },
+                { top: '55%', right: '-18%' },
               ];
               return (
                 <div
