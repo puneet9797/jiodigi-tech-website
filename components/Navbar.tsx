@@ -45,7 +45,7 @@ export default function Navbar() {
             src="/logo.png"
             alt="JioLite Info Tech Logo"
             style={{
-              height: scrolled ? 'clamp(54px, 5vw + 20px, 68px)' : 'clamp(76px, 7vw + 20px, 94px)',
+              height: scrolled ? 'clamp(40px, 4vw + 10px, 50px)' : 'clamp(55px, 5vw + 15px, 70px)',
               width: 'auto',
               filter: 'drop-shadow(0 0 12px rgba(14, 165, 233, 0.45)) drop-shadow(0 0 3px rgba(139, 92, 246, 0.35))',
               display: 'block',

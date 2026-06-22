@@ -22,7 +22,7 @@ export default function Footer() {
                 src="/logo.png"
                 alt="JioLite Info Tech Logo"
                 style={{
-                  height: 'clamp(80px, 8vw + 30px, 110px)',
+                  height: 'clamp(60px, 6vw + 20px, 80px)',
                   width: 'auto',
                   filter: 'drop-shadow(0 0 15px rgba(14, 165, 233, 0.45))',
                   display: 'block',
