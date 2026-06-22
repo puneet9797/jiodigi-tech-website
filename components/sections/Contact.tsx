@@ -56,16 +56,39 @@ export default function Contact() {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setLoading(true);
-    // Simulate API request delay
-    setTimeout(() => {
+    setErrors({});
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setErrors({
+          submit: data.error || 'Failed to send message. Please try again later or contact us directly.',
+        });
+      }
+    } catch (err) {
+      console.error('Submission error:', err);
+      setErrors({
+        submit: 'A network error occurred. Please check your connection and try again.',
+      });
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   };
 
   const contactDetails = [
@@ -313,6 +336,12 @@ export default function Contact() {
                     <div style={{ color: '#f87171', fontSize: 11, marginTop: 4 }}>{errors.requirements}</div>
                   )}
                 </div>
+
+                {errors.submit && (
+                  <div style={{ color: '#f87171', fontSize: 13, marginBottom: 20, textAlign: 'center', background: 'rgba(248,113,113,0.1)', border: '1px solid rgba(248,113,113,0.2)', padding: '10px 16px', borderRadius: 12 }}>
+                    ⚠️ {errors.submit}
+                  </div>
+                )}
 
                 {/* Buttons */}
                 <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>

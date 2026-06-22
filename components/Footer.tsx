@@ -35,9 +35,9 @@ export default function Footer() {
             {/* Contact info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { icon: <Mail size={14} />, text: 'hello@jiodigi.tech' },
-                { icon: <Phone size={14} />, text: '+91 98765 43210' },
-                { icon: <MapPin size={14} />, text: 'Tech Park, Bangalore, India' },
+                { icon: <Mail size={14} />, text: 'jioliteproducts@gmail.com' },
+                { icon: <Phone size={14} />, text: '+91 8299758889' },
+                { icon: <MapPin size={14} />, text: '74/276, Halsey Road, Kanpur - 208001, U.P., India' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#64748b', fontSize: 14 }}>
                   <span style={{ color: '#0ea5e9' }}>{item.icon}</span>
