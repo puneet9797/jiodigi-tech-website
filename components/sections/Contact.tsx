@@ -93,9 +93,9 @@ export default function Contact() {
 
   const contactDetails = [
     { icon: <Phone size={18} />, label: 'Phone', value: '+91 9369032501', href: 'tel:+918299758889', color: '#0ea5e9' },
-    { icon: <Mail size={18} />, label: 'Email', value: 'jioliteproducts@gmail.com', href: 'mailto:hello@jiodigi.tech', color: '#8b5cf6' },
+    { icon: <Mail size={18} />, label: 'Email', value: 'jioliteproducts@gmail.com', href: 'mailto:jioliteproducts@gmail.com', color: '#8b5cf6' },
     { icon: <MessageCircle size={18} />, label: 'WhatsApp', value: '+91 8299758889', href: 'https://wa.me/918299758889', color: '#25d366' },
-    // { icon: <Link2 size={18} />, label: 'LinkedIn', value: '/company/jiodigi-tech', href: '#', color: '#0a66c2' },
+    // { icon: <Link2 size={18} />, label: 'LinkedIn', value: '/company/jiolite-info-tech', href: '#', color: '#0a66c2' },
     { icon: <MapPin size={18} />, label: 'Office', value: '74/276, Halsey Road, Kanpur - 208001, U.P., India', href: '#', color: '#f59e0b' },
   ];
 

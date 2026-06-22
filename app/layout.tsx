@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "jiodigi Tech — Innovative Software Solutions",
-  description: "jiodigi Tech builds ERP Systems, CRM Platforms, E-Commerce Solutions, AI Automation, Mobile Apps, and Enterprise Software. Transforming businesses through innovative technology solutions.",
+  title: "JioLite Info Tech — Innovative Software Solutions",
+  description: "JioLite Info Tech builds ERP Systems, CRM Platforms, E-Commerce Solutions, AI Automation, Mobile Apps, and Enterprise Software. Transforming businesses through innovative technology solutions.",
   keywords: "ERP software, CRM development, e-commerce solutions, mobile app development, AI automation, enterprise software, custom software development",
-  authors: [{ name: "jiodigi Tech" }],
+  authors: [{ name: "JioLite Info Tech" }],
   openGraph: {
-    title: "jiodigi Tech — Innovative Software Solutions",
+    title: "JioLite Info Tech — Innovative Software Solutions",
     description: "Transforming Businesses Through Innovative Software Solutions. 500+ Projects, 200+ Happy Clients, 99.9% Uptime.",
-    url: "https://jiodigi.tech",
-    siteName: "jiodigi Tech",
+    url: "https://jiolite.tech",
+    siteName: "JioLite Info Tech",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "jiodigi Tech — Innovative Software Solutions",
+    title: "JioLite Info Tech — Innovative Software Solutions",
     description: "Transforming Businesses Through Innovative Software Solutions.",
   },
   robots: {

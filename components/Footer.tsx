@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Link2, MessageCircle, ArrowRight } from 'lucide-re
 
 const footerLinks = {
   Services: ['ERP Development', 'CRM Development', 'E-Commerce', 'Mobile Apps', 'AI Solutions', 'Cloud & DevOps', 'Digital Marketing'],
-  Products: ['JioDigi ERP', 'JioDigi CRM', 'JioDigi Commerce', 'JioDigi AI'],
+  Products: ['JioLite ERP', 'JioLite CRM', 'JioLite Commerce', 'JioLite AI'],
   Company: ['About Us', 'Case Studies', 'Careers', 'Blog', 'Privacy Policy'],
   Support: ['Documentation', 'Help Center', 'Contact Us', 'Status Page'],
 };
@@ -20,11 +20,11 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 20 }}>
               <img
                 src="/logo.png"
-                alt="JioDigi Tech Logo"
+                alt="JioLite Info Tech Logo"
                 style={{
                   height: 'clamp(80px, 8vw + 30px, 110px)',
                   width: 'auto',
-                  filter: 'invert(1) hue-rotate(180deg) drop-shadow(0 0 15px rgba(14, 165, 233, 0.45))',
+                  filter: 'drop-shadow(0 0 15px rgba(14, 165, 233, 0.45))',
                   display: 'block',
                 }}
               />
@@ -147,7 +147,7 @@ export default function Footer() {
         <div className="divider-glow" style={{ marginBottom: 24 }} />
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 32, flexWrap: 'wrap', gap: 16 }}>
           <p style={{ color: '#475569', fontSize: 13 }}>
-            © {new Date().getFullYear()} jiodigi Tech. All rights reserved.
+            © {new Date().getFullYear()} JioLite Info Tech. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: 24 }}>
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(link => (

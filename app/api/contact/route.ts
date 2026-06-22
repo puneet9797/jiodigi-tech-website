@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"${name} via JioDigi Website" <${user}>`,
+      from: `"${name} via JioLite Website" <${user}>`,
       replyTo: email,
       to: 'omar.puneet9797@gmail.com',
       subject: `New Project Inquiry from ${name} (${company || 'No Company'})`,

@@ -43,11 +43,11 @@ export default function Navbar() {
         <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img
             src="/logo.png"
-            alt="JioDigi Tech Logo"
+            alt="JioLite Info Tech Logo"
             style={{
               height: scrolled ? 'clamp(54px, 5vw + 20px, 68px)' : 'clamp(76px, 7vw + 20px, 94px)',
               width: 'auto',
-              filter: 'invert(1) hue-rotate(180deg) drop-shadow(0 0 12px rgba(14, 165, 233, 0.45)) drop-shadow(0 0 3px rgba(139, 92, 246, 0.35))',
+              filter: 'drop-shadow(0 0 12px rgba(14, 165, 233, 0.45)) drop-shadow(0 0 3px rgba(139, 92, 246, 0.35))',
               display: 'block',
               transition: 'all 0.4s ease',
             }}

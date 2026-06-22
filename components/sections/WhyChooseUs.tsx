@@ -34,10 +34,10 @@ export default function WhyChooseUs() {
         <div style={{ textAlign: 'center', marginBottom: 72 }}>
           <div className="section-badge">✅ Why Choose Us</div>
           <h2 className="section-title">
-            The <span className="gradient-text">jiodigi Tech</span> Advantage
+            The <span className="gradient-text">JioLite Info Tech</span> Advantage
           </h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            Not all software companies are equal. Here's why 200+ businesses trust jiodigi Tech over the competition.
+            Not all software companies are equal. Here's why 200+ businesses trust JioLite Info Tech over the competition.
           </p>
         </div>
 
