@@ -2,15 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Target, Eye, Heart, Lightbulb, Users, Award } from 'lucide-react';
 
-const timelineItems = [
-  { year: '2014', title: 'Founded', desc: 'Started with a vision to digitize businesses across India.' },
-  { year: '2016', title: 'First ERP Launch', desc: 'Delivered our flagship ERP product to 20+ manufacturing companies.' },
-  { year: '2018', title: 'AI Integration', desc: 'Pioneered AI-powered automation for SMEs and enterprises.' },
-  { year: '2020', title: 'Cloud Expansion', desc: 'Migrated 100+ clients to cloud-native architectures on AWS.' },
-  { year: '2022', title: 'Product Suite', desc: 'Launched JioDigi ERP, JioDigi CRM, JioDigi Commerce & JioDigi AI.' },
-  { year: '2024', title: '200+ Clients', desc: 'Serving clients across 15+ industries globally.' },
-];
-
 const pillars = [
   {
     icon: <Eye size={24} />,
@@ -88,68 +79,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* Timeline */}
-        <div style={{ marginBottom: 100, position: 'relative' }}>
-          <h3 style={{ textAlign: 'center', marginBottom: 48, fontSize: 24, fontWeight: 700, color: '#f0f9ff' }}>
-            Our Journey
-          </h3>
-
-          {/* Timeline Line */}
-          <div style={{ position: 'relative', overflowX: 'auto', paddingBottom: 16 }}>
-            <div style={{
-              display: 'flex', gap: 0, minWidth: 'fit-content',
-              margin: '0 auto', justifyContent: 'center',
-            }}>
-              {timelineItems.map((item, i) => (
-                <div
-                  key={i}
-                  style={{
-                    display: 'flex', flexDirection: 'column', alignItems: 'center',
-                    position: 'relative', width: 160,
-                    opacity: inView ? 1 : 0,
-                    transform: inView ? 'translateY(0)' : 'translateY(30px)',
-                    transition: `all 0.6s ease ${i * 0.15}s`,
-                  }}
-                >
-                  {/* Node */}
-                  <div style={{ position: 'relative', zIndex: 2, marginBottom: 20 }}>
-                    <div style={{
-                      width: 56, height: 56,
-                      borderRadius: '50%',
-                      background: 'linear-gradient(135deg, #0ea5e9, #8b5cf6)',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      boxShadow: '0 0 20px rgba(14,165,233,0.5)',
-                      fontFamily: 'Space Grotesk', fontWeight: 800, fontSize: 11,
-                      color: 'white', letterSpacing: '-0.03em',
-                    }}>
-                      {item.year}
-                    </div>
-                    {/* Connector line */}
-                    {i < timelineItems.length - 1 && (
-                      <div style={{
-                        position: 'absolute',
-                        top: '50%', left: '100%',
-                        width: 104, height: 2,
-                        background: 'linear-gradient(90deg, rgba(14,165,233,0.5), rgba(139,92,246,0.3))',
-                        transform: 'translateY(-50%)',
-                      }} />
-                    )}
-                  </div>
-                  {/* Content */}
-                  <div style={{
-                    background: 'rgba(10,25,50,0.6)',
-                    border: '1px solid rgba(14,165,233,0.15)',
-                    borderRadius: 12, padding: '14px 16px',
-                    textAlign: 'center', maxWidth: 140,
-                  }}>
-                    <div style={{ fontWeight: 700, fontSize: 14, color: '#f0f9ff', marginBottom: 6 }}>{item.title}</div>
-                    <div style={{ fontSize: 12, color: '#64748b', lineHeight: 1.5 }}>{item.desc}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Pillars Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }} className="pillars-grid">
