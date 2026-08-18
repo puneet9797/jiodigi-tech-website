@@ -38,7 +38,7 @@ export default function Footer() {
               {[
                 { icon: <Mail size={14} />, text: 'siddhivinayakassociate@gmail.com' },
                 { icon: <Phone size={14} />, text: '+91 8299758889' },
-                { icon: <MapPin size={14} />, text: '74/276, Halsey Road, Kanpur - 208001, U.P., India' },
+                { icon: <MapPin size={14} />, text: '128/596 K Block, Kidwai Nagar, Kanpur - 208011, U.P., India' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#64748b', fontSize: 14 }}>
                   <span style={{ color: '#0ea5e9' }}>{item.icon}</span>
