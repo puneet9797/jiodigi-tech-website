@@ -77,7 +77,7 @@ export default function Security() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="security" className="section-padding" style={{ background: 'linear-gradient(180deg, #020818, #030d1a)', position: 'relative', overflow: 'hidden' }}>
+    <section id="security" className="section-padding" style={{ background: 'var(--gradient-hero)', position: 'relative', overflow: 'hidden' }}>
       <div style={{
         position: 'absolute', inset: 0,
         background: 'radial-gradient(ellipse at 30% 70%, rgba(139,92,246,0.06) 0%, transparent 60%)',
@@ -103,8 +103,8 @@ export default function Security() {
               key={i}
               style={{
                 padding: '16px 24px', textAlign: 'center',
-                background: 'rgba(10,25,50,0.6)',
-                border: '1px solid rgba(14,165,233,0.2)',
+                background: 'var(--color-bg-card)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: 16, backdropFilter: 'blur(16px)',
                 minWidth: 120,
                 opacity: inView ? 1 : 0,
@@ -113,7 +113,7 @@ export default function Security() {
               }}
             >
               <div style={{ fontSize: 13, fontWeight: 800, color: '#0ea5e9', marginBottom: 4 }}>{cert.name}</div>
-              <div style={{ fontSize: 11, color: '#475569' }}>{cert.desc}</div>
+              <div style={{ fontSize: 11, color: 'var(--color-text-muted)' }}>{cert.desc}</div>
             </div>
           ))}
         </div>
@@ -140,16 +140,16 @@ export default function Security() {
               }}>
                 {feature.icon}
               </div>
-              <h4 style={{ fontSize: 15, fontWeight: 700, color: '#f0f9ff', marginBottom: 8 }}>{feature.title}</h4>
-              <p style={{ fontSize: 13, color: '#64748b', lineHeight: 1.6 }}>{feature.desc}</p>
+              <h4 style={{ fontSize: 15, fontWeight: 700, color: 'var(--color-text-primary)', marginBottom: 8 }}>{feature.title}</h4>
+              <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{feature.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Security Banner */}
         <div style={{
-          background: 'linear-gradient(135deg, rgba(14,165,233,0.08), rgba(139,92,246,0.06))',
-          border: '1px solid rgba(14,165,233,0.15)',
+          background: 'var(--color-bg-card)',
+          border: '1px solid var(--glass-border)',
           borderRadius: 24, padding: '48px 56px',
           display: 'flex', alignItems: 'center', gap: 48,
           flexWrap: 'wrap',
@@ -169,10 +169,10 @@ export default function Security() {
             <Shield size={48} color="#0ea5e9" />
           </div>
           <div style={{ flex: 1 }}>
-            <h3 style={{ fontSize: 26, fontWeight: 800, color: '#f0f9ff', marginBottom: 12 }}>
+            <h3 style={{ fontSize: 26, fontWeight: 800, color: 'var(--color-text-primary)', marginBottom: 12 }}>
               Your Data is Our Highest Priority
             </h3>
-            <p style={{ color: '#64748b', fontSize: 16, lineHeight: 1.7, marginBottom: 24 }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: 16, lineHeight: 1.7, marginBottom: 24 }}>
               We implement defense-in-depth security strategies across every layer of our software stack. From secure development practices to runtime monitoring — security is never an afterthought.
             </p>
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>

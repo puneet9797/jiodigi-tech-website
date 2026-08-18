@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="why-us" className="section-padding" style={{ background: '#020818', position: 'relative', overflow: 'hidden' }}>
+    <section id="why-us" className="section-padding" style={{ background: 'var(--color-bg-primary)', position: 'relative', overflow: 'hidden' }}>
       <div style={{
         position: 'absolute', inset: 0,
         background: 'radial-gradient(ellipse at 30% 50%, rgba(139,92,246,0.06) 0%, transparent 60%)',
@@ -34,10 +34,10 @@ export default function WhyChooseUs() {
         <div style={{ textAlign: 'center', marginBottom: 72 }}>
           <div className="section-badge">✅ Why Choose Us</div>
           <h2 className="section-title">
-            The <span className="gradient-text">JioLite Info Tech</span> Advantage
+            The <span className="gradient-text">Siddhivinayak Associate</span> Advantage
           </h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            Not all software companies are equal. Here's why 200+ businesses trust JioLite Info Tech over the competition.
+            Not all software companies are equal. Here's why 200+ businesses trust Siddhivinayak Associate over the competition.
           </p>
         </div>
 
@@ -47,8 +47,8 @@ export default function WhyChooseUs() {
             <div
               key={i}
               style={{
-                background: 'rgba(10,25,50,0.6)',
-                border: '1px solid rgba(14,165,233,0.15)',
+                background: 'var(--color-bg-card)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: 20, padding: '28px 20px',
                 textAlign: 'center',
                 backdropFilter: 'blur(16px)',
@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
               }}>
                 {stat.value}
               </div>
-              <div style={{ fontSize: 13, color: '#64748b', fontWeight: 500 }}>{stat.label}</div>
+              <div style={{ fontSize: 13, color: 'var(--color-text-muted)', fontWeight: 500 }}>{stat.label}</div>
             </div>
           ))}
         </div>
@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
 
         {/* Bottom CTA */}
         <div style={{ textAlign: 'center', marginTop: 56 }}>
-          <p style={{ color: '#64748b', fontSize: 16, marginBottom: 24 }}>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: 16, marginBottom: 24 }}>
             Still unsure? Talk to our experts — no obligation, completely free.
           </p>
           <a href="#contact" className="btn-primary" style={{ textDecoration: 'none', fontSize: 16, padding: '16px 40px' }}>

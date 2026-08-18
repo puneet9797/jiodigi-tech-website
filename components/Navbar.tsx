@@ -1,14 +1,17 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Products', href: '#products' },
-  { label: 'Case Studies', href: '#case-studies' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Products', href: '/products' },
+  { label: 'Case Studies', href: '/case-studies' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
@@ -32,57 +35,57 @@ export default function Navbar() {
         transition: 'all 0.4s ease',
         padding: scrolled ? '12px 0' : '20px 0',
         background: scrolled
-          ? 'rgba(2, 8, 24, 0.9)'
+          ? 'var(--glass-bg)'
           : 'transparent',
-        backdropFilter: scrolled ? 'blur(20px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(14,165,233,0.1)' : 'none',
+        backdropFilter: scrolled ? 'var(--glass-blur)' : 'none',
+        borderBottom: scrolled ? '1px solid var(--glass-border)' : 'none',
       }}
     >
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Logo */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img
             src="/logo.png"
-            alt="JioLite Info Tech Logo"
+            alt="Siddhivinayak Associate Logo"
             style={{
               height: scrolled ? 'clamp(40px, 4vw + 10px, 50px)' : 'clamp(55px, 5vw + 15px, 70px)',
               width: 'auto',
-              filter: 'drop-shadow(0 0 12px rgba(14, 165, 233, 0.45)) drop-shadow(0 0 3px rgba(139, 92, 246, 0.35))',
               display: 'block',
               transition: 'all 0.4s ease',
             }}
           />
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <ul style={{ display: 'flex', alignItems: 'center', gap: 32, listStyle: 'none', padding: 0, margin: 0 }}
           className="hidden-mobile">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 style={{
-                  color: '#94a3b8',
+                  color: 'var(--color-text-secondary)',
                   textDecoration: 'none',
                   fontSize: 14,
                   fontWeight: 500,
                   transition: 'color 0.2s ease',
                   letterSpacing: '0.01em',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#0ea5e9')}
-                onMouseLeave={e => (e.currentTarget.style.color = '#94a3b8')}
+                onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-brand-blue)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
-        {/* CTA */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }} className="hidden-mobile">
-          <a href="#contact" className="btn-primary" style={{ padding: '10px 24px', fontSize: 14, textDecoration: 'none' }}>
+        {/* CTA & ThemeToggle */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }} className="hidden-mobile">
+          <ThemeToggle />
+          <Link href="/contact" className="btn-primary" style={{ padding: '10px 24px', fontSize: 14, textDecoration: 'none' }}>
             <span>Book Consultation</span>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -91,7 +94,7 @@ export default function Navbar() {
           style={{
             background: 'none',
             border: 'none',
-            color: '#f0f9ff',
+            color: 'var(--color-text-primary)',
             cursor: 'pointer',
             display: 'none',
           }}
@@ -110,20 +113,20 @@ export default function Navbar() {
             top: '100%',
             left: 0,
             right: 0,
-            background: 'rgba(2, 8, 24, 0.98)',
-            backdropFilter: 'blur(20px)',
-            borderBottom: '1px solid rgba(14,165,233,0.1)',
+            background: 'var(--color-bg-primary)',
+            backdropFilter: 'var(--glass-blur)',
+            borderBottom: '1px solid var(--glass-border)',
             padding: '24px',
           }}
         >
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 20 }}>
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
                   style={{
-                    color: '#94a3b8',
+                    color: 'var(--color-text-secondary)',
                     textDecoration: 'none',
                     fontSize: 16,
                     fontWeight: 500,
@@ -131,13 +134,17 @@ export default function Navbar() {
                   }}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
+            <li style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ fontSize: 14, color: 'var(--color-text-secondary)' }}>Theme:</span>
+              <ThemeToggle />
+            </li>
             <li>
-              <a href="#contact" className="btn-primary" style={{ textDecoration: 'none', display: 'inline-flex' }}>
+              <Link href="/contact" onClick={() => setMenuOpen(false)} className="btn-primary" style={{ textDecoration: 'none', display: 'inline-flex' }}>
                 <span>Book Consultation</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

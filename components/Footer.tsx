@@ -1,9 +1,10 @@
 'use client';
 import { Mail, Phone, MapPin, Link2, MessageCircle, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const footerLinks = {
   Services: ['ERP Development', 'CRM Development', 'E-Commerce', 'Mobile Apps', 'AI Solutions', 'Cloud & DevOps', 'Digital Marketing'],
-  Products: ['JioLite ERP', 'JioLite CRM', 'JioLite Commerce', 'JioLite AI'],
+  Products: ['Siddhivinayak ERP', 'Siddhivinayak CRM', 'Siddhivinayak Commerce', 'Siddhivinayak AI'],
   Company: ['About Us', 'Case Studies', 'Careers', 'Blog', 'Privacy Policy'],
   Support: ['Documentation', 'Help Center', 'Contact Us', 'Status Page'],
 };
@@ -20,11 +21,11 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 20 }}>
               <img
                 src="/logo.png"
-                alt="JioLite Info Tech Logo"
+                alt="Siddhivinayak Associate Logo"
                 style={{
                   height: 'clamp(60px, 6vw + 20px, 80px)',
                   width: 'auto',
-                  filter: 'drop-shadow(0 0 15px rgba(14, 165, 233, 0.45))',
+                  // filter: 'drop-shadow(0 0 15px rgba(14, 165, 233, 0.45))',
                   display: 'block',
                 }}
               />
@@ -35,7 +36,7 @@ export default function Footer() {
             {/* Contact info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { icon: <Mail size={14} />, text: 'jioliteproducts@gmail.com' },
+                { icon: <Mail size={14} />, text: 'siddhivinayakassociate@gmail.com' },
                 { icon: <Phone size={14} />, text: '+91 8299758889' },
                 { icon: <MapPin size={14} />, text: '74/276, Halsey Road, Kanpur - 208001, U.P., India' },
               ].map((item, i) => (
@@ -91,19 +92,34 @@ export default function Footer() {
                 {category}
               </h4>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      style={{ color: '#64748b', textDecoration: 'none', fontSize: 14, transition: 'color 0.2s ease', display: 'flex', alignItems: 'center', gap: 6 }}
-                      onMouseEnter={e => (e.currentTarget.style.color = '#0ea5e9')}
-                      onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}
-                    >
-                      <ArrowRight size={12} style={{ opacity: 0.5 }} />
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {links.map((link) => {
+                  let href = '#';
+                  if (category === 'Services') href = '/services';
+                  else if (category === 'Products') {
+                    if (link.includes('ERP')) href = '/products/erp';
+                    else if (link.includes('CRM')) href = '/products/crm';
+                    else if (link.includes('Commerce')) href = '/products/commerce';
+                    else if (link.includes('AI')) href = '/products/ai';
+                  } else if (category === 'Company') {
+                    if (link === 'About Us') href = '/about';
+                    else if (link === 'Case Studies') href = '/case-studies';
+                  } else if (category === 'Support') {
+                    if (link === 'Contact Us') href = '/contact';
+                  }
+                  return (
+                    <li key={link}>
+                      <Link
+                        href={href}
+                        style={{ color: '#64748b', textDecoration: 'none', fontSize: 14, transition: 'color 0.2s ease', display: 'flex', alignItems: 'center', gap: 6 }}
+                        onMouseEnter={e => (e.currentTarget.style.color = '#0ea5e9')}
+                        onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}
+                      >
+                        <ArrowRight size={12} style={{ opacity: 0.5 }} />
+                        {link}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -147,7 +163,7 @@ export default function Footer() {
         <div className="divider-glow" style={{ marginBottom: 24 }} />
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 32, flexWrap: 'wrap', gap: 16 }}>
           <p style={{ color: '#475569', fontSize: 13 }}>
-            © {new Date().getFullYear()} JioLite Info Tech. All rights reserved.
+            © {new Date().getFullYear()} Siddhivinayak Associate. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: 24 }}>
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(link => (

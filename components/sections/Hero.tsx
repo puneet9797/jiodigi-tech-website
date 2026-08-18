@@ -298,7 +298,7 @@ export default function Hero() {
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(180deg, #020818 0%, #030d1a 60%, #020818 100%)',
+        background: 'var(--gradient-hero)',
       }}
     >
       {/* Particle Background */}
@@ -353,7 +353,7 @@ export default function Hero() {
                 fontWeight: 900,
                 lineHeight: 1.1,
                 marginBottom: 24,
-                color: '#f0f9ff',
+                color: 'var(--color-text-primary)',
                 letterSpacing: '-0.03em',
                 animation: mounted ? 'slide-up 0.6s 0.1s ease both' : 'none',
               }}
@@ -378,7 +378,7 @@ export default function Hero() {
             <p
               style={{
                 fontSize: 18,
-                color: '#94a3b8',
+                color: 'var(--color-text-secondary)',
                 lineHeight: 1.75,
                 marginBottom: 40,
                 animation: mounted ? 'slide-up 0.6s 0.2s ease both' : 'none',
@@ -389,7 +389,7 @@ export default function Hero() {
               <span style={{ color: '#8b5cf6', fontWeight: 600 }}>CRM Platforms</span>,{' '}
               <span style={{ color: '#10b981', fontWeight: 600 }}>E-Commerce Solutions</span>,{' '}
               AI Automation, Mobile Apps, and Enterprise Software that help businesses{' '}
-              <strong style={{ color: '#f0f9ff' }}>scale faster</strong>.
+              <strong style={{ color: 'var(--color-text-primary)' }}>scale faster</strong>.
             </p>
 
             {/* CTA Buttons */}
@@ -426,8 +426,8 @@ export default function Hero() {
                   style={{
                     textAlign: 'center',
                     padding: '16px 8px',
-                    background: 'rgba(14,165,233,0.05)',
-                    border: '1px solid rgba(14,165,233,0.12)',
+                    background: 'var(--color-bg-card)',
+                    border: '1px solid var(--glass-border)',
                     borderRadius: 16,
                     backdropFilter: 'blur(10px)',
                   }}
@@ -446,7 +446,7 @@ export default function Hero() {
                   >
                     <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                   </div>
-                  <div style={{ fontSize: 12, color: '#64748b', fontWeight: 500 }}>{stat.label}</div>
+                  <div style={{ fontSize: 12, color: 'var(--color-text-muted)', fontWeight: 500 }}>{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -487,9 +487,9 @@ export default function Hero() {
                   style={{
                     position: 'absolute',
                     ...positions[i],
-                    background: 'rgba(10,25,50,0.7)',
+                    background: 'var(--color-bg-card)',
                     backdropFilter: 'blur(16px)',
-                    border: `1px solid ${card.color}30`,
+                    border: `1px solid var(--glass-border)`,
                     borderRadius: 14,
                     padding: '12px 18px',
                     display: 'flex',
@@ -503,7 +503,7 @@ export default function Hero() {
                   }}
                 >
                   <span style={{ fontSize: 20 }}>{card.icon}</span>
-                  <span style={{ color: '#f0f9ff', fontWeight: 600, fontSize: 13 }}>{card.label}</span>
+                  <span style={{ color: 'var(--color-text-primary)', fontWeight: 600, fontSize: 13 }}>{card.label}</span>
                   <span style={{ width: 8, height: 8, borderRadius: '50%', background: card.color, animation: 'pulse-glow 2s infinite' }} />
                 </div>
               );
@@ -518,7 +518,7 @@ export default function Hero() {
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
         animation: 'float 2s ease-in-out infinite', zIndex: 1,
       }}>
-        <span style={{ color: '#475569', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Scroll to explore</span>
+        <span style={{ color: 'var(--color-text-muted)', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Scroll to explore</span>
         <ChevronDown size={20} color="#0ea5e9" />
       </div>
 

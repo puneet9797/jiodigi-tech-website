@@ -116,7 +116,7 @@ export default function Metrics() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="metrics" className="section-padding" style={{ background: '#020818', position: 'relative', overflow: 'hidden' }}>
+    <section id="metrics" className="section-padding" style={{ background: 'var(--color-bg-primary)', position: 'relative', overflow: 'hidden' }}>
       <div style={{
         position: 'absolute', inset: 0,
         background: 'radial-gradient(ellipse at 50% 100%, rgba(14,165,233,0.08) 0%, transparent 60%)',
@@ -142,8 +142,8 @@ export default function Metrics() {
               key={i}
               style={{
                 textAlign: 'center',
-                background: 'rgba(10,25,50,0.5)',
-                border: '1px solid rgba(14,165,233,0.12)',
+                background: 'var(--color-bg-card)',
+                border: '1px solid var(--glass-border)',
                 borderRadius: 24, padding: '36px 24px',
                 backdropFilter: 'blur(16px)',
                 opacity: inView ? 1 : 0,
@@ -153,15 +153,15 @@ export default function Metrics() {
             >
               <div style={{ fontSize: 28, marginBottom: 16 }}>{m.icon}</div>
               <CircularProgress value={m.value} color={m.color} size={110} />
-              <div style={{ marginTop: 20, fontSize: 14, fontWeight: 600, color: '#94a3b8' }}>{m.label}</div>
+              <div style={{ marginTop: 20, fontSize: 14, fontWeight: 600, color: 'var(--color-text-secondary)' }}>{m.label}</div>
             </div>
           ))}
         </div>
 
         {/* Average Rating Banner */}
         <div style={{
-          background: 'linear-gradient(135deg, rgba(14,165,233,0.08), rgba(139,92,246,0.08))',
-          border: '1px solid rgba(14,165,233,0.15)',
+          background: 'var(--color-bg-card)',
+          border: '1px solid var(--glass-border)',
           borderRadius: 24, padding: '40px',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           flexWrap: 'wrap', gap: 32,
@@ -170,7 +170,7 @@ export default function Metrics() {
           transition: 'all 0.6s ease 0.5s',
         }}>
           <div>
-            <div style={{ fontSize: 14, color: '#64748b', marginBottom: 8 }}>Overall Client Rating</div>
+            <div style={{ fontSize: 14, color: 'var(--color-text-secondary)', marginBottom: 8 }}>Overall Client Rating</div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <span style={{
                 fontSize: 64, fontWeight: 900, fontFamily: 'Space Grotesk',
@@ -185,7 +185,7 @@ export default function Metrics() {
                     <span key={s} style={{ fontSize: 24, color: '#f59e0b' }}>★</span>
                   ))}
                 </div>
-                <div style={{ fontSize: 13, color: '#64748b' }}>out of 5.0</div>
+                <div style={{ fontSize: 13, color: 'var(--color-text-muted)' }}>out of 5.0</div>
               </div>
             </div>
           </div>
@@ -198,10 +198,10 @@ export default function Metrics() {
             ].map((item, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: 24, marginBottom: 4 }}>{item.icon}</div>
-                <div style={{ fontSize: 22, fontWeight: 800, color: '#f0f9ff', fontFamily: 'Space Grotesk' }}>
+                <div style={{ fontSize: 22, fontWeight: 800, color: 'var(--color-text-primary)', fontFamily: 'Space Grotesk' }}>
                   {item.value}
                 </div>
-                <div style={{ fontSize: 12, color: '#475569' }}>{item.label}</div>
+                <div style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>{item.label}</div>
               </div>
             ))}
           </div>

@@ -73,8 +73,8 @@ function TechBadge({ tech, color, delay, inView }: { tech: { name: string; icon:
       style={{
         display: 'flex', alignItems: 'center', gap: 10,
         padding: '12px 20px',
-        background: hovered ? `${color}12` : 'rgba(10,25,50,0.6)',
-        border: `1px solid ${hovered ? color + '40' : 'rgba(14,165,233,0.12)'}`,
+        background: hovered ? `${color}12` : 'var(--color-bg-card)',
+        border: `1px solid ${hovered ? color + '40' : 'var(--glass-border)'}`,
         borderRadius: 16, cursor: 'default',
         backdropFilter: 'blur(10px)',
         transition: 'all 0.3s ease',
@@ -102,11 +102,11 @@ function TechBadge({ tech, color, delay, inView }: { tech: { name: string; icon:
         {tech.icon}
       </div>
       <div>
-        <div style={{ fontSize: 14, fontWeight: 700, color: hovered ? '#f0f9ff' : '#94a3b8', transition: 'color 0.3s' }}>
+        <div style={{ fontSize: 14, fontWeight: 700, color: hovered ? 'var(--color-text-primary)' : 'var(--color-text-secondary)', transition: 'color 0.3s' }}>
           {tech.name}
         </div>
         {hovered && (
-          <div style={{ fontSize: 11, color: '#475569', marginTop: 2 }}>{tech.desc}</div>
+          <div style={{ fontSize: 11, color: 'var(--color-text-muted)', marginTop: 2 }}>{tech.desc}</div>
         )}
       </div>
     </div>
@@ -117,7 +117,7 @@ export default function TechStack() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="tech-stack" className="section-padding" style={{ background: 'linear-gradient(180deg, #020818, #030d1a)', position: 'relative', overflow: 'hidden' }}>
+    <section id="tech-stack" className="section-padding" style={{ background: 'var(--gradient-hero)', position: 'relative', overflow: 'hidden' }}>
       <div style={{
         position: 'absolute', inset: 0,
         background: 'radial-gradient(ellipse at 70% 30%, rgba(14,165,233,0.05) 0%, transparent 60%)',
@@ -146,7 +146,7 @@ export default function TechStack() {
                   background: cat.color,
                   boxShadow: `0 0 10px ${cat.color}80`,
                 }} />
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: '#f0f9ff' }}>{cat.category}</h3>
+                <h3 style={{ fontSize: 16, fontWeight: 700, color: 'var(--color-text-primary)' }}>{cat.category}</h3>
                 <div style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${cat.color}30, transparent)` }} />
               </div>
 

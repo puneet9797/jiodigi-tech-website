@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Rajesh Sharma',
     role: 'CEO, Apex Industries Ltd.',
     rating: 5,
-    text: 'JioLite Info Tech transformed our entire business process. Their ERP system saved hundreds of hours every month and gave us real-time visibility we never had before. Exceptional team, exceptional results.',
+    text: 'Siddhivinayak Associate transformed our entire business process. Their ERP system saved hundreds of hours every month and gave us real-time visibility we never had before. Exceptional team, exceptional results.',
     industry: 'Manufacturing',
     emoji: '👨‍💼',
     outcome: '300% efficiency increase',
@@ -37,7 +37,7 @@ const testimonials = [
     name: 'Sunita Agarwal',
     role: 'Head of Operations, BrightFuture EduTech',
     rating: 5,
-    text: 'We went from paper-based admissions to a fully digital platform in 90 days. JioLite Info Tech understood our complex requirements and delivered a system that 50,000+ students use daily. Incredible work.',
+    text: 'We went from paper-based admissions to a fully digital platform in 90 days. Siddhivinayak Associate understood our complex requirements and delivered a system that 50,000+ students use daily. Incredible work.',
     industry: 'Education',
     emoji: '👩‍🏫',
     outcome: '120% enrollment growth',
@@ -47,7 +47,7 @@ const testimonials = [
     name: 'Vikram Nair',
     role: 'CTO, LogisticsPro India',
     rating: 5,
-    text: 'We evaluated 8 vendors before choosing JioLite Info Tech. Best decision we made. Their technical depth, communication, and commitment to deadlines is unmatched in the industry.',
+    text: 'We evaluated 8 vendors before choosing Siddhivinayak Associate. Best decision we made. Their technical depth, communication, and commitment to deadlines is unmatched in the industry.',
     industry: 'Logistics',
     emoji: '🚚',
     outcome: '45% cost reduction',
@@ -103,7 +103,7 @@ export default function Testimonials() {
   const current = testimonials[active];
 
   return (
-    <section id="testimonials" className="section-padding" style={{ background: 'linear-gradient(180deg, #020818, #030d1a)', position: 'relative', overflow: 'hidden' }}>
+    <section id="testimonials" className="section-padding" style={{ background: 'var(--gradient-hero)', position: 'relative', overflow: 'hidden' }}>
       <div style={{
         position: 'absolute', inset: 0,
         background: 'radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.06) 0%, transparent 70%)',
@@ -125,7 +125,7 @@ export default function Testimonials() {
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div
             style={{
-              background: 'rgba(10,25,50,0.6)',
+              background: 'var(--color-bg-card)',
               border: `1px solid ${current.color}25`,
               borderRadius: 28, padding: '56px 64px',
               backdropFilter: 'blur(20px)',
@@ -168,7 +168,7 @@ export default function Testimonials() {
 
             {/* Quote Text */}
             <blockquote style={{
-              fontSize: 20, color: '#f0f9ff', lineHeight: 1.75,
+              fontSize: 20, color: 'var(--color-text-primary)', lineHeight: 1.75,
               fontStyle: 'italic', marginBottom: 40,
               fontWeight: 400,
             }}>
@@ -188,8 +188,8 @@ export default function Testimonials() {
                 {current.emoji}
               </div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 17, color: '#f0f9ff' }}>{current.name}</div>
-                <div style={{ fontSize: 14, color: '#64748b' }}>{current.role}</div>
+                <div style={{ fontWeight: 700, fontSize: 17, color: 'var(--color-text-primary)' }}>{current.name}</div>
+                <div style={{ fontSize: 14, color: 'var(--color-text-muted)' }}>{current.role}</div>
               </div>
               <div style={{ marginLeft: 'auto' }}>
                 <span style={{
@@ -213,7 +213,7 @@ export default function Testimonials() {
                 width: 44, height: 44,
                 borderRadius: '50%',
                 background: 'rgba(14,165,233,0.1)',
-                border: '1px solid rgba(14,165,233,0.25)',
+                border: '1px solid var(--glass-border)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 color: '#0ea5e9', cursor: 'pointer',
                 transition: 'all 0.3s ease',

@@ -1,10 +1,11 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 const products = [
   {
     id: 'erp',
-    name: 'JioLite ERP',
+    name: 'Siddhivinayak ERP',
     tagline: 'Complete Enterprise Resource Planning',
     description: 'An all-in-one ERP solution that manages every aspect of your business — from inventory to payroll, all in one unified platform.',
     color: '#0ea5e9',
@@ -20,7 +21,7 @@ const products = [
   },
   {
     id: 'crm',
-    name: 'JioLite CRM',
+    name: 'Siddhivinayak CRM',
     tagline: 'Customer Relationship Management',
     description: 'Convert leads faster, retain customers longer, and build lasting relationships with our intelligent CRM platform.',
     color: '#8b5cf6',
@@ -35,7 +36,7 @@ const products = [
   },
   {
     id: 'commerce',
-    name: 'JioLite Commerce',
+    name: 'Siddhivinayak Commerce',
     tagline: 'Modern E-Commerce Platform',
     description: 'Launch, manage, and scale your online store with a powerful e-commerce platform built for modern businesses.',
     color: '#10b981',
@@ -50,7 +51,7 @@ const products = [
   },
   {
     id: 'ai',
-    name: 'JioLite AI',
+    name: 'Siddhivinayak AI',
     tagline: 'AI-Powered Business Assistant',
     description: 'Harness the power of artificial intelligence to automate workflows, gain predictive insights, and make smarter decisions.',
     color: '#06b6d4',
@@ -160,7 +161,7 @@ function DashboardPreview({ product }: { product: typeof products[0] }) {
           borderRadius: 6, padding: '4px 16px',
           fontSize: 11, color: '#475569', margin: '0 16px',
         }}>
-          app.jiolite.tech/{product.id}/{activeModuleName.toLowerCase()}
+          app.siddhivinayakassociate.com/{product.id}/{activeModuleName.toLowerCase()}
         </div>
       </div>
 
@@ -391,12 +392,12 @@ export default function Products() {
               </div>
 
               <div style={{ display: 'flex', gap: 12 }}>
-                <a href="#contact" className="btn-primary" style={{ textDecoration: 'none', background: product.gradient }}>
+                <Link href="/contact" className="btn-primary" style={{ textDecoration: 'none', background: product.gradient }}>
                   <span>Get Demo</span>
-                </a>
-                <a href="#contact" className="btn-secondary" style={{ textDecoration: 'none' }}>
+                </Link>
+                <Link href={`/products/${product.id}`} className="btn-secondary" style={{ textDecoration: 'none' }}>
                   <span>Learn More</span>
-                </a>
+                </Link>
               </div>
             </div>
 
