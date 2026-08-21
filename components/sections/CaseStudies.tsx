@@ -7,8 +7,8 @@ const caseStudies = [
     industry: 'Manufacturing',
     client: 'Apex Industries Ltd.',
     challenge: 'Manual inventory tracking causing 30% stock discrepancies and delayed production.',
-    solution: 'Deployed Siddhivinayak ERP with real-time inventory sync, automated GST filing, and production scheduling.',
-    technologies: ['Siddhivinayak ERP', 'React', 'Node.js', 'PostgreSQL', 'AWS'],
+    solution: 'Deployed RSVP ERP with real-time inventory sync, automated GST filing, and production scheduling.',
+    technologies: ['RSVP ERP', 'React', 'Node.js', 'PostgreSQL', 'AWS'],
     results: [
       { metric: 'Efficiency', value: '300%', direction: 'up', color: '#10b981' },
       { metric: 'Manual Work', value: '45%', direction: 'down', color: '#0ea5e9' },
@@ -22,8 +22,8 @@ const caseStudies = [
     industry: 'E-Commerce Retail',
     client: 'ShopNow Pvt. Ltd.',
     challenge: 'Fragmented sales channels, no inventory visibility, and 40% cart abandonment rate.',
-    solution: 'Built Siddhivinayak Commerce with multi-vendor marketplace, real-time inventory, and AI-driven recommendations.',
-    technologies: ['Siddhivinayak Commerce', 'Next.js', 'Python', 'Redis', 'Stripe'],
+    solution: 'Built RSVP Commerce with multi-vendor marketplace, real-time inventory, and AI-driven recommendations.',
+    technologies: ['RSVP Commerce', 'Next.js', 'Python', 'Redis', 'Stripe'],
     results: [
       { metric: 'Sales Growth', value: '200%', direction: 'up', color: '#10b981' },
       { metric: 'Cart Abandonment', value: '60%', direction: 'down', color: '#0ea5e9' },
@@ -94,7 +94,7 @@ export default function CaseStudies() {
             Real Results for <span className="gradient-text">Real Businesses</span>
           </h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            Numbers don't lie. Here's what happened when leading businesses chose Siddhivinayak Associate.
+            Numbers don't lie. Here's what happened when leading businesses chose RSVP Technologies.
           </p>
         </div>
 

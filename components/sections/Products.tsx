@@ -5,7 +5,7 @@ import Link from 'next/link';
 const products = [
   {
     id: 'erp',
-    name: 'Siddhivinayak ERP',
+    name: 'RSVP ERP',
     tagline: 'Complete Enterprise Resource Planning',
     description: 'An all-in-one ERP solution that manages every aspect of your business — from inventory to payroll, all in one unified platform.',
     color: '#0ea5e9',
@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: 'crm',
-    name: 'Siddhivinayak CRM',
+    name: 'RSVP CRM',
     tagline: 'Customer Relationship Management',
     description: 'Convert leads faster, retain customers longer, and build lasting relationships with our intelligent CRM platform.',
     color: '#8b5cf6',
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 'commerce',
-    name: 'Siddhivinayak Commerce',
+    name: 'RSVP Commerce',
     tagline: 'Modern E-Commerce Platform',
     description: 'Launch, manage, and scale your online store with a powerful e-commerce platform built for modern businesses.',
     color: '#10b981',
@@ -51,7 +51,7 @@ const products = [
   },
   {
     id: 'ai',
-    name: 'Siddhivinayak AI',
+    name: 'RSVP AI',
     tagline: 'AI-Powered Business Assistant',
     description: 'Harness the power of artificial intelligence to automate workflows, gain predictive insights, and make smarter decisions.',
     color: '#06b6d4',
@@ -161,7 +161,7 @@ function DashboardPreview({ product }: { product: typeof products[0] }) {
           borderRadius: 6, padding: '4px 16px',
           fontSize: 11, color: '#475569', margin: '0 16px',
         }}>
-          app.siddhivinayakassociate.com/{product.id}/{activeModuleName.toLowerCase()}
+          app.RSVPtechnologies.com/{product.id}/{activeModuleName.toLowerCase()}
         </div>
       </div>
 

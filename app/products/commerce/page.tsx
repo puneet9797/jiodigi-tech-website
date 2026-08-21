@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Siddhivinayak Commerce — Modern E-Commerce Platform',
+  title: 'RSVP Commerce — Modern E-Commerce Platform',
   description: 'Launch, manage, and scale your online store with a powerful, secure, and modern e-commerce platform built for high-performance businesses.',
   keywords: 'ecommerce platform, online storefront, cart software, checkout system, payment gateway integration, shipping tracker, vendor marketplace',
 };
@@ -17,7 +17,7 @@ export default function CommercePage() {
           <span style={{ margin: '0 8px' }}>/</span>
           <Link href="/products" style={{ color: '#10b981', textDecoration: 'none' }}>Products</Link>
           <span style={{ margin: '0 8px' }}>/</span>
-          <span style={{ color: '#94a3b8' }}>Siddhivinayak Commerce</span>
+          <span style={{ color: '#94a3b8' }}>RSVP Commerce</span>
         </div>
 
         {/* Hero Section */}
@@ -47,13 +47,13 @@ export default function CommercePage() {
           </span>
 
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, color: '#f0f9ff', marginBottom: '16px', lineHeight: 1.2 }}>
-            Siddhivinayak <span style={{ color: '#10b981' }}>Commerce</span>
+            RSVP <span style={{ color: '#10b981' }}>Commerce</span>
           </h1>
           <p style={{ fontSize: '20px', color: '#94a3b8', marginBottom: '24px', fontWeight: 500 }}>
             Modern E-Commerce Platform
           </p>
           <p style={{ color: '#64748b', fontSize: '16px', lineHeight: 1.8, maxWidth: '800px', marginBottom: '32px' }}>
-            Siddhivinayak Commerce provides everything required to run high-volume, multi-channel e-commerce systems. 
+            RSVP Commerce provides everything required to run high-volume, multi-channel e-commerce systems. 
             Featuring lightning-fast storefront loading, advanced SEO parameters, secure checkouts, vendor marketplace support, 
             and deep inventory synchronizations, it allows businesses to deliver an unmatched digital shopping experience.
           </p>

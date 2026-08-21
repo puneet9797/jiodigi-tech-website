@@ -5,20 +5,20 @@ import Background3D from '@/components/Background3D';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "Siddhivinayak Associate — Innovative Software Solutions",
-  description: "Siddhivinayak Associate builds ERP Systems, CRM Platforms, E-Commerce Solutions, AI Automation, Mobile Apps, and Enterprise Software. Transforming businesses through innovative technology solutions.",
+  title: "RSVP Technologies — Innovative Software Solutions",
+  description: "RSVP Technologies builds ERP Systems, CRM Platforms, E-Commerce Solutions, AI Automation, Mobile Apps, and Enterprise Software. Transforming businesses through innovative technology solutions.",
   keywords: "ERP software, CRM development, e-commerce solutions, mobile app development, AI automation, enterprise software, custom software development",
-  authors: [{ name: "Siddhivinayak Associate" }],
+  authors: [{ name: "RSVP Technologies" }],
   openGraph: {
-    title: "Siddhivinayak Associate — Innovative Software Solutions",
+    title: "RSVP Technologies — Innovative Software Solutions",
     description: "Transforming Businesses Through Innovative Software Solutions. 500+ Projects, 200+ Happy Clients, 99.9% Uptime.",
-    url: "https://siddhivinayakassociate.com",
-    siteName: "Siddhivinayak Associate",
+    url: "https://RSVPtechnologies.com",
+    siteName: "RSVP Technologies",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Siddhivinayak Associate — Innovative Software Solutions",
+    title: "RSVP Technologies — Innovative Software Solutions",
     description: "Transforming Businesses Through Innovative Software Solutions.",
   },
   robots: {

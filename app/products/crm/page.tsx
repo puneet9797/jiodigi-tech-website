@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Siddhivinayak CRM — Customer Relationship & Lead Management Platform',
-  description: 'Convert leads faster, retain customers longer, and build lasting relationships with Siddhivinayak CRM. Track sales pipelines, follow-ups, and email campaigns in one intelligent platform.',
+  title: 'RSVP CRM — Customer Relationship & Lead Management Platform',
+  description: 'Convert leads faster, retain customers longer, and build lasting relationships with RSVP CRM. Track sales pipelines, follow-ups, and email campaigns in one intelligent platform.',
   keywords: 'CRM software, lead management, sales pipeline tracking, follow up systems, customer database, email marketing automation, sales dashboards',
 };
 
@@ -17,7 +17,7 @@ export default function CRMPage() {
           <span style={{ margin: '0 8px' }}>/</span>
           <Link href="/products" style={{ color: '#8b5cf6', textDecoration: 'none' }}>Products</Link>
           <span style={{ margin: '0 8px' }}>/</span>
-          <span style={{ color: '#94a3b8' }}>Siddhivinayak CRM</span>
+          <span style={{ color: '#94a3b8' }}>RSVP CRM</span>
         </div>
 
         {/* Hero Section */}
@@ -47,15 +47,15 @@ export default function CRMPage() {
           </span>
 
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, color: '#f0f9ff', marginBottom: '16px', lineHeight: 1.2 }}>
-            Siddhivinayak <span style={{ color: '#8b5cf6' }}>CRM</span>
+            RSVP <span style={{ color: '#8b5cf6' }}>CRM</span>
           </h1>
           <p style={{ fontSize: '20px', color: '#94a3b8', marginBottom: '24px', fontWeight: 500 }}>
             Customer Relationship Management
           </p>
           <p style={{ color: '#64748b', fontSize: '16px', lineHeight: 1.8, maxWidth: '800px', marginBottom: '32px' }}>
-            Siddhivinayak CRM is designed to supercharge your sales force. From managing lead generation pipelines and assigning 
+            RSVP CRM is designed to supercharge your sales force. From managing lead generation pipelines and assigning 
             follow-ups, to tracking client email histories and evaluating sales performance metrics, 
-            Siddhivinayak CRM helps you scale conversion rates and build lifelong customer loyalty.
+            RSVP CRM helps you scale conversion rates and build lifelong customer loyalty.
           </p>
 
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>

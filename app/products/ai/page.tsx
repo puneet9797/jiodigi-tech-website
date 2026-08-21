@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Siddhivinayak AI — Intelligent Business Automation & Predictive Analytics',
-  description: 'Automate business workflows, generate smart dashboards, deploy custom chatbots, and run predictive analytics with Siddhivinayak AI.',
+  title: 'RSVP AI — Intelligent Business Automation & Predictive Analytics',
+  description: 'Automate business workflows, generate smart dashboards, deploy custom chatbots, and run predictive analytics with RSVP AI.',
   keywords: 'artificial intelligence, business automation, custom NLP chatbot, predictive analytics, computer vision, smart reporting, workflow automation',
 };
 
@@ -17,7 +17,7 @@ export default function AIPage() {
           <span style={{ margin: '0 8px' }}>/</span>
           <Link href="/products" style={{ color: '#06b6d4', textDecoration: 'none' }}>Products</Link>
           <span style={{ margin: '0 8px' }}>/</span>
-          <span style={{ color: '#94a3b8' }}>Siddhivinayak AI</span>
+          <span style={{ color: '#94a3b8' }}>RSVP AI</span>
         </div>
 
         {/* Hero Section */}
@@ -47,13 +47,13 @@ export default function AIPage() {
           </span>
 
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, color: '#f0f9ff', marginBottom: '16px', lineHeight: 1.2 }}>
-            Siddhivinayak <span style={{ color: '#06b6d4' }}>AI</span>
+            RSVP <span style={{ color: '#06b6d4' }}>AI</span>
           </h1>
           <p style={{ fontSize: '20px', color: '#94a3b8', marginBottom: '24px', fontWeight: 500 }}>
             AI-Powered Business Assistant
           </p>
           <p style={{ color: '#64748b', fontSize: '16px', lineHeight: 1.8, maxWidth: '800px', marginBottom: '32px' }}>
-            Siddhivinayak AI integrates state-of-the-art cognitive technologies into everyday business operations. 
+            RSVP AI integrates state-of-the-art cognitive technologies into everyday business operations. 
             Automate customer support using natural language chatbots, analyze transaction data to forecast demand, 
             extract data from complex document layouts using vision parsers, and run custom background automation bots.
           </p>

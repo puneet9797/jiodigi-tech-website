@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import About from '@/components/sections/About';
 
 export const metadata: Metadata = {
-  title: 'About Us — Siddhivinayak Associate',
-  description: 'Learn more about Siddhivinayak Associate. Our mission, vision, core values, culture, and outstanding track record of delivering 500+ successful software projects.',
-  keywords: 'about siddhivinayak, software development team, core values, company mission, tech expertise',
+  title: 'About Us — RSVP Technologies',
+  description: 'Learn more about RSVP Technologies. Our mission, vision, core values, culture, and outstanding track record of delivering 500+ successful software projects.',
+  keywords: 'about RSVP, software development team, core values, company mission, tech expertise',
 };
 
 export default function AboutPage() {
