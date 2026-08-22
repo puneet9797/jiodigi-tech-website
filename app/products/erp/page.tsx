@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RSVP ERP — Complete Enterprise Resource Planning Software',
+  title: 'RSVPAI ERP — Complete Enterprise Resource Planning Software',
   description: 'An all-in-one ERP solution that manages every aspect of your business — from inventory and accounts to GST filing, production, and HRMS in one unified platform.',
   keywords: 'ERP software, enterprise resource planning, inventory tracking, HRMS system, production planning, accounting software, GST calculator',
 };
@@ -17,7 +17,7 @@ export default function ERPPage() {
           <span style={{ margin: '0 8px' }}>/</span>
           <Link href="/products" style={{ color: '#0ea5e9', textDecoration: 'none' }}>Products</Link>
           <span style={{ margin: '0 8px' }}>/</span>
-          <span style={{ color: '#94a3b8' }}>RSVP ERP</span>
+          <span style={{ color: '#94a3b8' }}>RSVPAI ERP</span>
         </div>
 
         {/* Hero Section */}
@@ -47,15 +47,15 @@ export default function ERPPage() {
           </span>
 
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, color: '#f0f9ff', marginBottom: '16px', lineHeight: 1.2 }}>
-            RSVP <span style={{ color: '#0ea5e9' }}>ERP</span>
+            RSVPAI <span style={{ color: '#0ea5e9' }}>ERP</span>
           </h1>
           <p style={{ fontSize: '20px', color: '#94a3b8', marginBottom: '24px', fontWeight: 500 }}>
             Complete Enterprise Resource Planning
           </p>
           <p style={{ color: '#64748b', fontSize: '16px', lineHeight: 1.8, maxWidth: '800px', marginBottom: '32px' }}>
-            RSVP ERP is an all-in-one solution designed to manage every single operational aspect of your business. 
+            RSVPAI ERP is an all-in-one solution designed to manage every single operational aspect of your business. 
             By integrating inventory tracking, bookkeeping, production lifecycle management, HR & payroll, and sales pipelines, 
-            RSVP ERP breaks down data silos to provide real-time decision visibility.
+            RSVPAI ERP breaks down data silos to provide real-time decision visibility.
           </p>
 
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>

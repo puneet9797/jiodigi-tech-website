@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const footerLinks = {
   Services: ['ERP Development', 'CRM Development', 'E-Commerce', 'Mobile Apps', 'AI Solutions', 'Cloud & DevOps', 'Digital Marketing'],
-  Products: ['RSVP ERP', 'RSVP CRM', 'RSVP Commerce', 'RSVP AI'],
+  Products: ['RSVPAI ERP', 'RSVPAI CRM', 'RSVPAI Commerce', 'RSVPAI'],
   Company: ['About Us', 'Case Studies', 'Careers', 'Blog', 'Privacy Policy'],
   Support: ['Documentation', 'Help Center', 'Contact Us', 'Status Page'],
 };
@@ -21,7 +21,7 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 20 }}>
               <img
                 src="/logo.png"
-                alt="RSVP Technologies Logo"
+                alt="RSVPAI Info Tech Logo"
                 style={{
                   height: 'clamp(60px, 6vw + 20px, 80px)',
                   width: 'auto',
@@ -36,7 +36,7 @@ export default function Footer() {
             {/* Contact info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { icon: <Mail size={14} />, text: 'RSVPtechnologies@gmail.com' },
+                { icon: <Mail size={14} />, text: 'rsvpaiinfotech@gmail.com' },
                 { icon: <Phone size={14} />, text: '+91 8299758889' },
                 { icon: <MapPin size={14} />, text: '128/596 K Block, Kidwai Nagar, Kanpur - 208011, U.P., India' },
               ].map((item, i) => (
@@ -163,7 +163,7 @@ export default function Footer() {
         <div className="divider-glow" style={{ marginBottom: 24 }} />
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 32, flexWrap: 'wrap', gap: 16 }}>
           <p style={{ color: '#475569', fontSize: 13 }}>
-            © {new Date().getFullYear()} RSVP Technologies. All rights reserved.
+            © {new Date().getFullYear()} RSVPAI Info Tech. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: 24 }}>
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(link => (
