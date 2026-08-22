@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 20 }}>
               <img
-                src="/logo.png"
+                src="/logo-dark.png"
                 alt="RSVPAI Info Tech Logo"
                 style={{
                   height: 'clamp(60px, 6vw + 20px, 80px)',

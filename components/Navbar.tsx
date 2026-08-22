@@ -17,12 +17,30 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+
+    // Detect initial theme
+    const isLight = document.documentElement.classList.contains('light');
+    setTheme(isLight ? 'light' : 'dark');
+
+    // Watch for theme changes via class mutations on <html>
+    const observer = new MutationObserver(() => {
+      const isLight = document.documentElement.classList.contains('light');
+      setTheme(isLight ? 'light' : 'dark');
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      observer.disconnect();
+    };
   }, []);
+
+  const logoSrc = theme === 'light' ? '/logo-light.png' : '/logo-dark.png';
 
   return (
     <nav
@@ -45,7 +63,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img
-            src="/logo.png"
+            src={logoSrc}
             alt="RSVPAI Info Tech Logo"
             style={{
               height: scrolled ? 'clamp(40px, 4vw + 10px, 50px)' : 'clamp(55px, 5vw + 15px, 70px)',
