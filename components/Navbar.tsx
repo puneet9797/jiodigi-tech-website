@@ -64,7 +64,7 @@ export default function Navbar() {
         <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <img
             src={logoSrc}
-            alt="RSVPAI Info Tech Logo"
+            alt="Siddhivinayak Associate Logo"
             style={{
               height: scrolled ? 'clamp(40px, 4vw + 10px, 50px)' : 'clamp(55px, 5vw + 15px, 70px)',
               width: 'auto',

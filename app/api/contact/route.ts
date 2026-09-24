@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"${name} via RSVPAI Info Tech Website" <${user}>`,
+      from: `"${name} via Siddhivinayak Associate Website" <${user}>`,
       replyTo: email,
       to: 'omar.puneet9797@gmail.com',
       subject: `New Project Inquiry from ${name} (${company || 'No Company'})`,

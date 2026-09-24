@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const footerLinks = {
   Services: ['ERP Development', 'CRM Development', 'E-Commerce', 'Mobile Apps', 'AI Solutions', 'Cloud & DevOps', 'Digital Marketing'],
-  Products: ['RSVPAI ERP', 'RSVPAI CRM', 'RSVPAI Commerce', 'RSVPAI'],
+  Products: ['Siddhivinayak ERP', 'Siddhivinayak CRM', 'Siddhivinayak Commerce', 'Siddhivinayak AI'],
   Company: ['About Us', 'Case Studies', 'Careers', 'Blog', 'Privacy Policy'],
   Support: ['Documentation', 'Help Center', 'Contact Us', 'Status Page'],
 };
@@ -21,7 +21,7 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: 20 }}>
               <img
                 src="/logo-dark.png"
-                alt="RSVPAI Info Tech Logo"
+                alt="Siddhivinayak Associate Logo"
                 style={{
                   height: 'clamp(60px, 6vw + 20px, 80px)',
                   width: 'auto',
@@ -36,8 +36,8 @@ export default function Footer() {
             {/* Contact info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { icon: <Mail size={14} />, text: 'rsvpaiinfotech@gmail.com' },
-                { icon: <Phone size={14} />, text: '+91 8299758889' },
+                { icon: <Mail size={14} />, text: 'siddhivinayakassociate@gmail.com' },
+                { icon: <Phone size={14} />, text: '+91 9369288078' },
                 { icon: <MapPin size={14} />, text: '128/596 K Block, Kidwai Nagar, Kanpur - 208011, U.P., India' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#64748b', fontSize: 14 }}>
@@ -163,7 +163,7 @@ export default function Footer() {
         <div className="divider-glow" style={{ marginBottom: 24 }} />
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 32, flexWrap: 'wrap', gap: 16 }}>
           <p style={{ color: '#475569', fontSize: 13 }}>
-            © {new Date().getFullYear()} RSVPAI Info Tech. All rights reserved.
+            © {new Date().getFullYear()} Siddhivinayak Associate. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: 24 }}>
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(link => (
